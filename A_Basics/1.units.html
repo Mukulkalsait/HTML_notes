@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNITS</title>
+    <!-- ======BS 5.3.2===== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- ====== icons ===== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://kit.fontawesome.com/54ce859d2c.js" crossorigin="anonymous"></script>
+    <!-- ====== CSS ===== -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ====== CSS-MQ ===== -->
+    <link rel="stylesheet" href="styleMQ.css">
+    <!-- ====== fonts ===== -->
+
+    <!-- ====== carousal ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ====== animate ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- ====== a ===== -->
+    <!-- ====== a ===== -->
+    <!-- ====== a ===== -->
+    <!-- ====== a ===== -->
+    <!-- ====== a ===== -->
+
+
+
+</head>
+
+<body>
+
+
+    <h1 class="text-center">CSS Units</h1>
+    <!-- ++++++++++++++++++++++++++++++  section-1  +++++++++++++++++++++++++++++++++ -->
+    <div class="section-1 container ">
+        <h2 class="text-center">Absolute Lengths (Fixed)</h2>
+        <ol>
+            <li class=" fw-medium">px * pixels (1px = 1/96th of 1in)</li>
+            <li class=" fw-medium">pc (1pc = 1/864 1 inch)</li>
+            <li class="text-success fw-medium"> <span class="text-danger">Extras =</span> cm,mm,inches,pi(picas)</li>
+        </ol>
+
+    </div>
+    <div class="section-1 container ">
+        <h2 class="text-center">Relative Lengths</h2>
+
+        <p class="fw-bold "><span class="text-primary">r</span> =root</p>
+        <p class="fw-bold "><span class="text-primary">e</span> =element</p>
+        <p class="fw-bold "><span class="text-primary">m</span> =multiply</p>
+        <p class="fw-bold "><span class="text-primary">v</span> =viewport</p>
+
+        <h3 class="text-center">IMP</h3>
+        <ol>
+            <li> <span class="text-danger fw-bold"> em </span> = font-size of the element</li>
+            <div class="em-Box">The font-size of the div element is set to 20px. <span>The span element inside the div
+                    element has a font-size of 0.5em, which equals to 0.5x20 = 10px</span>.
+            </div>
+
+            <li> <span class="text-danger fw-bold"> rem </span> = Relative to font-size of the root element</li>
+            <div class="rem-div ">
+                The font-size of this div element is 1.8rem, which translates to 1.8 x the browser's font size.
+                <div class="rem-top-div">The font-size of this div element is 0.8rem. It also shows that it does not
+                    inherit from its parent
+                    element font size.</div>
+            </div>
+            <li> <span class="text-danger fw-bold"> vw </span> = Relative to 1% of the width of the viewport*</li>
+            <div class="container border-3 border p-3">
+                <p class="text-danger">font-size: 12vw;</p>
+                <h4 class="vw-h4">Hello</h4>
+                <p>Resize the width of the browser window to see how the font-size of h1 changes.</p>
+                <p>1vw = 1% of viewport width.</p>
+            </div>
+            <li> <span class="text-danger fw-bold"> vh </span> = Relative to 1% of the height of the viewport*</li>
+            <div class="container border-3 border p-3">
+                <p class="text-danger">font-size: 12vh;</p>
+                <h4 class="vh-h4">Hello</h4>
+                <p>Resize the height of the browser window to see how the font-size of h1 changes.</p>
+                <p>1vh = 1% of viewport height.</p>
+            </div>
+            <li> <span class="text-danger fw-bold"> vmin </span> = Relative to 1% of viewport's* smaller dimension </li>
+            <div class="container border-3 border p-3">
+                <p class="text-danger">font-size: 12vmin;</p>
+                <h4 class="vmin-h4">Hello</h4>
+                <p>Resize the browser window (both width and height) to see how the font-size of h1 changes.</p>
+                <p>1vmin = 1vw or 1vh, whichever is smaller.</p>
+            </div>
+            <li> <span class="text-danger fw-bold"> vmax </span> = Relative to 1% of viewport's* larger dimensio</li>
+            <div class="container border-3 border p-3">
+                <p class="text-danger">font-size: 12vmax;</p>
+                <h4 class="vmax-h4">Hello</h4>
+                <p>Resize the browser window (both width and height) to see how the font-size of h1 changes.</p>
+                <p>1vmax = 1vw or 1vh, whichever is larger.</p>
+                <p>The vmax unit is not supported in Edge 15 and earlier, nor in Safari 6.1 and earlier.</p>
+            </div>
+            <li> <span class="text-danger fw-bold"> % </span> = Relative to the parent element</li>
+
+            <h4 class="text-center">EXTRAS</h4>
+            <li> <span class="text-danger fw-bold"> ex </span> = Relative to the x-height of the current font (rarely
+                used)
+            </li>
+            <li> <span class="text-danger fw-bold"> ch </span> = Relative to the width of the "0" (zero)</li>
+
+
+        </ol>
+    </div>
+
+
+    <!-- ------------------------------  section-1 END  --------------------------------- -->
+
+
+
+
+
+    <!-- ++++++++++++++++++++++++++++++  x  +++++++++++++++++++++++++++++++++ -->
+    <!-- ------------------------------  x  --------------------------------- -->
+    <!-- ==============================  x  ================================= -->
+    <!-- **************** End of x **************** -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ===================================== Owl + JQiery ============================================ -->
+    <!-- ===================================== OC- initilisation ============================================ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- ===================================== BS 5.3.2 ============================================ -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- ===================================== JS (allways at end) ============================================ -->
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
