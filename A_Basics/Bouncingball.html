@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body{
+            }
+            .common{
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                display: inline-block;
+                animation-name:xyz;
+                animation-duration: 0.4s;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in;
+                animation-direction: alternate;
+            }
+            .b1{
+                background: red;
+                animation-delay: 0s;
+            }
+            .b2{
+                background: green;
+                animation-delay: 0.1s;
+            }
+            .b3{
+                background: blue;
+                animation-delay: 0.2s;
+            }
+            .b4{
+                background: orange;
+                animation-delay: 0.3s;
+            }
+            .b5{
+                background: yellow;
+                animation-delay: 0.4s;
+            }
+            .b6{
+                background: lavender;
+                animation-delay: 0.5s;
+            }
+            .b7{
+                background: purple;
+                animation-delay: 0.6s;
+            }
+
+            @keyframes xyz{
+                0%{
+                    transform: translateY(0px);
+                    opacity: 0;
+                }
+                100%{
+                    transform: translateY(20px);
+                    opacity: 1;
+
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="common b1"></div>
+        <div class="common b2"></div>
+        <div class="common b3"></div>
+        <div class="common b4"></div>
+        <div class="common b5"></div>
+        <div class="common b6"></div>
+        <div class="common b7"></div>
+    </body>
+</html>
