@@ -1,0 +1,55 @@
+.logo a::before {
+  content: '';
+  position: absolute;
+  right: 50%;
+  bottom: -20%;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: var(--text-color);
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+
+.logo:hover a::before {
+  opacity: 1;
+}
+
+.nav-links li a::before {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  right: 50%;
+  transform: translateX(20%);
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background-color: var(--text-color);
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+
+.nav-links li:hover a::before {
+  opacity: 1;
+}
+
+.searchField::before {
+  content: "";
+  position: absolute;
+  height: 12px;
+  right: 14px;
+  top: -4px;
+  width: 12px;
+  background-color: var(--nav-color);
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+
+@media screen and(max-width: 768px) {
+  .menus {
+    position: fixed !important;
+    height: 100% !important;
+    width: 100% !important;
+  }
+}

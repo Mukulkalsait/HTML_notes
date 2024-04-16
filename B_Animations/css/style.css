@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+
+/* ============================================== section-1 =============================================== */
+.section-1{
+  margin: 200px auto;
+}
+
+.common {
+  height: 20vh;
+  width: 30vh;
+  overflow: hidden;
+}
+
+.photobox {
+  /* background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
+  background: rgba(0, 0, 0, 0) url(../img/photo-1.jpg) no-repeat ;
+  background-size: cover;
+  position: relative;
+  box-shadow:0px 0px 12px 4px rgba(0, 0, 0, 0.486);
+}
+
+.circ{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: block;
+  /* background-color: #fff; */
+  position: absolute;
+  text-align: center;
+  line-height: 40px;
+  color: black;
+  font-weight: bolder;
+ 
+}
+
+.cir1{top: 35%;
+  left: 5rem;
+}
+.cir2{top: 35%;
+  left: 8rem;
+}
+
+.overlay1 {
+  background-color: rgba(0, 0, 0, 0.495);
+  position: absolute;
+  bottom: 20vh;
+  transition: all 500ms;
+}
+.photobox:hover > .overlay1 {position: absolute;
+  position: absolute;
+  bottom: 0vh;
+}
+
+.overlay2 {
+  background-color: rgba(0, 0, 0, 0.495);
+  position: absolute;
+  right: 30vh;
+  transition: all 500ms;
+}
+.photobox:hover > .overlay2 {position: absolute;
+  position: absolute;
+  right: 0vh;
+}
+.overlay3 {
+  background-color: rgba(0, 0, 0, 0.495);
+  position: absolute;
+  left: 30vh;
+  transition: all 500ms;
+}
+.photobox:hover > .overlay3 {position: absolute;
+  position: absolute;
+  left: 0vh;
+}
+
+
+
+
+.overlay4 {
+  background-color: rgba(0, 0, 0, 0.495);
+  position: absolute;
+  top: 20vh;
+  transition: all 100ms;
+}
+.photobox:hover > .overlay4 {position: absolute;
+  position: absolute;
+  top: 0vh;
+}
+.cir4-1 , .cir4-2{
+  transform: scale(10,10) ;
+  transition:all 200ms 100ms;
+  background-color: #ffffff22;
+  color: #ffffff22;
+
+}
+
+.photobox:hover .overlay4 .cir4-1 , .photobox:hover .overlay4 .cir4-2{
+transform: scale(1,1);
+background-color: #ffffff;
+color: #000000;
+visibility: 1;
+}
+
+
+/* ============================================== section-1 END =============================================== */
+
+/* ============================================== section-1 =============================================== */
+
+
+
+
+/* ============================================== section-1 END =============================================== */
