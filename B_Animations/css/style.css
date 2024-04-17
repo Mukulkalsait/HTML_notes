@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 /* ============================================== section-1 =============================================== */
@@ -51,7 +50,8 @@
   top: 35%;
   left: 5rem;
   background-color: #ffffff;
-  transition: all 200ms 100ms;
+  transition: all 500ms 100ms;
+    transition-timing-function: cubic-bezier(.63,.04,.4,2.06);
 }
 
 .cir2 {
@@ -61,7 +61,8 @@
   top: 35%;
   left: 8rem;
   background-color: #ffffff;
-  transition: all 200ms 100ms;
+  transition: all 500ms 100ms;
+    transition-timing-function: cubic-bezier(.63,.04,.4,2.06);
 }
 
 /* ============================================== 1-1 =============================================== */
@@ -74,6 +75,22 @@
   bottom: 0vh;
 }
 
+.cir1-1 {
+  transform: rotateZ(-180deg);
+  transform-origin: -100px 20px;
+}
+
+.cir1-2 {
+  transform: rotateZ(-180deg);
+  transform-origin: 100px 20px;
+
+}
+
+.photobox:hover .overlay1 .cir1-1 ,.photobox:hover .overlay1 .cir1-2 {
+  transform: rotateZ(0deg);
+}
+
+
 /* ============================================== 1-2 =============================================== */
 
 .overlay2 {
@@ -82,6 +99,23 @@
 
 .photobox:hover>.overlay2 {
   right: 0vh;
+}
+
+.cir2-1 {
+  transform: rotateZ(-180deg);
+  transform-origin: 82px 20px;
+}
+
+.cir2-2 {
+  transform: scale(0, 0);
+}
+
+.photobox:hover .overlay2 .cir2-1 {
+  transform: rotateZ(0deg);
+}
+
+.photobox:hover .overlay2 .cir2-2 {
+  transform: scale(1, 1);
 }
 
 /* ============================================== 1-3 =============================================== */
@@ -125,7 +159,6 @@
 .cir4-1,
 .cir4-2 {
   transform: scale(10, 10);
-  transition: all 200ms 100ms;
   background-color: #ffffff22;
   color: #ffffff22;
 
