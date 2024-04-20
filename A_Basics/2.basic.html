@@ -37,19 +37,20 @@
 
     <style>
         .containerX {
-            background: url(../B_Animations/img/photo-1.jpg);
+            background-image: url(../B_Animations/img/photo-1.jpg);
             background-size: contain;
             width: 400px;
             height: 400px;
             border: 1px solid black;
             margin: auto;
-            transform: all 500ms;
+            border-radius: 0px ;
+            transition: border-radius 500ms ease 0s , background-image 500ms ease 200ms ;
 
         }
 
         .containerX:hover {
             border-radius: 30px;
-            background: url(../B_Animations/img/photo-2.jpg);
+            background-image:url(../B_Animations/img/photo-2.jpg) ;
             background-size: contain;
         }
 
@@ -114,6 +115,7 @@
 
 
     <h1 class="text-center">CSS Units</h1>
+    <p class="text-center">multy Transition is used hear in single line...</p>
     <!-- ++++++++++++++++++++++++++++++  section-1  +++++++++++++++++++++++++++++++++ -->
     <div class="section-1 container ">
         <h3>IMP things</h3>
@@ -174,14 +176,15 @@
             visibility: 1;
             }
                 </pre>
-                <li>for cetering Margin:auto is still the best.</li>
+                <li>for centering elements Margin:auto, d-flex+ JCC is still the best.</li>
                 <h2>Transation & Transform</h2>
                 <li>
                     <h3>Transation</h3>
                 </li>
 
-                <h3> transation must be use only for HOVER and use animation whenj you have to use it directly</h3>
+                <h3> transation must be use only for HOVER and use animation when you have to use it directly</h3>
                 <p>Hover changes the properties so add property changes in hover & use Transation and timing functions to make it look better. </p>
+                <p>Make sure to use Transation inside main css & not in hover. </p>
                 <p>use cubic-bezier in timing functions.</p>
                 <pre>
             transition:all    200ms     100ms;
@@ -197,7 +200,8 @@ transition-delay
 eg.
 <h4> transition: <span class="text-warning" title="transition-1"> border-radius 2s ease 1s </span>,<span class="text-info" title="transition-2"> background-color 2s ease-out 1s </span>;</h4>
                                 ^^^^^^^^       ^^^^^  ^^^^^  ^^^^
-                                property  -  duration- delay - timingFunction
+                                property  -  duration-timFun-delay
+                                <h2 class="bg-warning text-black">Transition: P-D-T-D,P-D-T-D;</h2>
 
 transition-property
  the border-radius property   +   the background-color property.
